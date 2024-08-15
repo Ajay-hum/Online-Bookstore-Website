@@ -1,0 +1,78 @@
+:root {
+    --primaryColor: hsl(199, 100%, 33%);
+    --secondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 41%, 36%);
+    --whiteColorDemi: hsl(240, 42%, 93%);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+    --greyBg: rgb(183, 179, 179); /* Added value for greyBg */
+    --greyText: rgb(146, 137, 137);
+    --box-shadow: 0 2px 8px rgba(66, 53, 53, 0.45);
+}
+
+.navBarSection{
+    .header{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: rgb(239, 58, 30);
+        width: 100%;
+        padding: 1rem;
+        z-index: 1000;
+
+        .logoDiv{
+            //This is the style for "G.S.Books"
+            .logo{
+                color: white;
+                font-weight: 500;
+                align-items: center;
+                cursor: pointer;
+                justify-content: center;
+
+                //This is the style for "BOOK ICON"
+                .icon{
+                    font-size: 33px;
+                    color: var(--primaryColor);
+                    margin-right: 10px;
+                    border: 2px solid transparent;
+
+                    &:hover{
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                .navBar{
+                    position: absolute; //formerly absolute
+                    background: var(--greyBg);
+                    height: max-content;
+                    width: 100%; 
+                    top: 1rem; //formerly (0)
+                    left: -100%;
+                    border-radius: 3rem; //added this
+                    padding: .5rem;
+                    transform: .5s ease;
+                    z-index: 1000;
+                    box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
+
+                    .navLists{
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 100%;
+                        margin: auto;
+                        
+                        .navItem{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

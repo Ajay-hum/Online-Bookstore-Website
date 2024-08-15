@@ -1,0 +1,64 @@
+:root {
+  --primaryColor: hsl(199, 100%, 33%);
+  --secondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 41%, 36%);
+  --whiteColorDemi: hsl(240, 42%, 93%);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --greyBg: rgb(183, 179, 179); /* Added value for greyBg */
+  --greyText: rgb(146, 137, 137);
+  --box-shadow: 0 2px 8px rgba(66, 53, 53, 0.45);
+}
+
+.navBarSection .header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(239, 58, 30);
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+}
+.navBarSection .header .logoDiv .logo {
+  color: white;
+  font-weight: 500;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+}
+.navBarSection .header .logoDiv .logo .icon {
+  font-size: 33px;
+  color: var(--primaryColor);
+  margin-right: 10px;
+  border: 2px solid transparent;
+}
+.navBarSection .header .logoDiv .logo .icon:hover {
+  color: var(--whiteColor);
+}
+@media screen and (max-width: 768px) {
+  .navBarSection .header .logoDiv .navBar {
+    position: absolute;
+    background: var(--greyBg);
+    height: -moz-max-content;
+    height: max-content;
+    width: 100%;
+    top: 1rem;
+    left: -100%;
+    border-radius: 3rem;
+    padding: 0.5rem;
+    transform: 0.5s ease;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
+  }
+  .navBarSection .header .logoDiv .navBar .navLists {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+}/*# sourceMappingURL=navbar.css.map */
