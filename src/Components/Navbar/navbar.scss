@@ -20,7 +20,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: rgb(239, 58, 30);
+        background: rgb(3, 3, 33);
         width: 100%;
         padding: 1rem;
         z-index: 1000;
@@ -28,7 +28,7 @@
         .logoDiv{
             //This is the style for "G.S.Books"
             .logo{
-                color: white;
+                color: rgb(231, 23, 23);
                 font-weight: 500;
                 align-items: center;
                 cursor: pointer;
@@ -36,43 +36,150 @@
 
                 //This is the style for "BOOK ICON"
                 .icon{
-                    font-size: 33px;
-                    color: var(--primaryColor);
-                    margin-right: 10px;
-                    border: 2px solid transparent;
+                    font-size: 25px;
+                    color: rgb(249, 0, 0);
+                    margin-right: 15px;
+                    //border: 2px solid transparent;
 
                     &:hover{
                         color: var(--whiteColor);
                     }
                 }
             }
+        }
 
-            @media screen and (max-width: 768px) {
-                .navBar{
-                    position: absolute; //formerly absolute
-                    background: var(--greyBg);
-                    height: max-content;
-                    width: 100%; 
-                    top: 1rem; //formerly (0)
-                    left: -100%;
-                    border-radius: 3rem; //added this
-                    padding: .5rem;
-                    transform: .5s ease;
-                    z-index: 1000;
-                    box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
+        @media screen and (max-width: 768px) {
+            .navBar{
+                position: absolute; //formerly absolute
+                background: var(--greyBg);
+                height: max-content;
+                width: 100%; 
+                top: 1rem; //formerly (0)
+                left: -100%;
+                border-radius: 3rem; //added this
+                padding: .5rem;
+                transition: .5s ease;
+                z-index: 1000;
+                box-shadow: 0 2px 4px rgba(140, 135, 135, 0.904);
 
-                    .navLists{
+                .navLists{
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100%;
+                    margin: auto;
+                    
+                    //This is the style for the individual items in the navbar
+                    .navItem{
+                        padding: 1rem 0;
+
+                        //This is the style for the texts in the navbar
+                        .navLink{
+                            color: rgb(239, 58, 30);
+                            font-size: .9rem;
+                            font-weight: 600;
+                            cursor: pointer;
+                            &:hover{
+                                color: rgb(227, 129, 93);
+                            }
+                        }
+                    }
+
+                    .headerBtns{
                         flex-direction: column;
-                        justify-content: center;
-                        width: 100%;
-                        margin: auto;
-                        
-                        .navItem{
-                            
+                        .btn{
+                            margin-top: 1rem;
+
+                            .navLink{
+                                font-weight: 600;
+                                color: white;
+                            }
+
+                            &:hover{
+                                background: var(--secondaryColor);
+                            }
+                        }
+                    }
+                }
+
+                //This is the code for the X in the navbar
+                .closeNavbar{
+                    position: absolute;
+                    top: 1rem;
+                    right: 1.5rem;
+                    color: var(--primaryColor);
+                    &:hover .icon{
+                        color: var(--secondaryColor);
+                    }
+                }
+            }
+
+            .activeNavbar{
+                left: 0;
+            }
+
+            .toggleNavbar{
+                .icon{
+                    font-size: 30px;
+                    color: white;
+                }
+                &:hover .icon{
+                    color: var(--secondaryColor);
+                }
+            }
+        }
+    }
+}
+
+//Media Queries====================>
+@media screen and (min-width: 769px) {
+    .navBarSection{
+
+        .toggleNavbar, .closeNavbar{
+            display: none;
+        }
+    
+        .header{
+            padding: 1.5rem 2rem;
+            .navBar{
+                .navLists{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row;
+
+                    .navItem{
+                        .navLink{
+                            color: white;
+                            cursor: pointer;
+                            padding: 0 .45rem;
+                            font-weight: 600;
+                            font-size: .9rem;
+                            &:hover{
+                                color: var(--primaryColor);
+                            }
+                        }
+                    }
+
+                    .btn{
+                        margin-left: 1rem;
+
+                        a{
+                            color: var(--whiteColor);
+                            font-weight: 500;
+                        }
+
+                        &:hover{
+                            background: var(--secondaryColor);
                         }
                     }
                 }
             }
         }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header{
+        padding: 1rem 8.5rem !important;
     }
 }

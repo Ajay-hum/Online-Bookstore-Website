@@ -1,1 +1,79 @@
-/*# sourceMappingURL=trending.css.map */
+:root {
+  --primaryColor: hsl(199, 100%, 33%);
+  --secondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 41%, 36%);
+  --whiteColorDemi: hsl(240, 42%, 93%);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --greyBg: rgb(183, 179, 179); /* Added value for greyBg */
+  --greyText: rgb(146, 137, 137);
+  --box-shadow: 0 2px 8px rgba(66, 53, 53, 0.45);
+}
+
+.trendingSection {
+  padding: 40px;
+  background-color: var(--greyText);
+  color: #333;
+}
+.trendingSection h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: black;
+}
+.trendingSection .trendingBooks {
+  display: flex;
+  overflow: hidden;
+  width: 640px;
+  position: relative;
+  gap: 20px;
+  padding: 10px;
+}
+.trendingSection .trendingBooks .bookCard {
+  position: relative;
+  align-items: center;
+  min-width: 200px;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+.trendingSection .trendingBooks .bookCard .bookCover {
+  width: 210px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.trendingSection .trendingBooks .bookCard .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trendingSection .trendingBooks .bookCard .overlay .overlayContent {
+  text-align: center;
+}
+.trendingSection .trendingBooks .bookCard .overlay .overlayContent h3 {
+  font-size: 18px;
+  margin: 0;
+}
+.trendingSection .trendingBooks .bookCard .overlay .overlayContent p {
+  font-size: 14px;
+  margin: 5px 0 0;
+}
+.trendingSection .trendingBooks .bookCard:hover .overlay {
+  opacity: 1;
+}/*# sourceMappingURL=trending.css.map */

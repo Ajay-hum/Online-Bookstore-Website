@@ -1,36 +1,50 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './navbar.css'
 import { Link } from 'react-scroll'
 
 //Import Icons to use....................
-import { MdOutlineTravelExplore } from 'react-icons/md'
+import { MdLibraryBooks } from "react-icons/md";
 import { AiFillCloseCircle } from 'react-icons/ai';
 import { TbGridDots } from 'react-icons/tb';
 
 const Navbar = () => {
+  const [active, setActive] = useState('navBar');
+
+  // Function to toggle navBar
+  const showNav = () => {
+      setActive('navBar activeNavbar');
+  };
+
+  // Function to close navBar
+  const removeNav = () => {
+      setActive('navBar');
+  };
+
   return (
     <section className="navBarSection">
       <div className="header">
+
         <div className="logoDiv">
-          <Link to="#" smooth={true} duration={500} className="logo">
+          <Link to="home" smooth={true} duration={500} className="logo">
             <h1>
-              <MdOutlineTravelExplore className='icon' /> G.S.Books
+              <MdLibraryBooks className='icon' />G.S.Books.
             </h1>
           </Link>
         </div>
 
-        <div className="navBar">
+        <div className={active}>
           <ul className="navLists flex">
+
             <li className="navItem">
-              <Link to="#" smooth={true} duration={500} className='navLink'>Home</Link>
+              <Link to="home" smooth={true} duration={500} className='navLink'>Home</Link>
             </li>
 
             <li className="navItem">
-              <Link to="#" smooth={true} duration={500} className='navLink'>Categories</Link>
+              <Link to="categories" smooth={true} duration={500} className='navLink'>Categories</Link>
             </li>
 
             <li className="navItem">
-              <Link to="#" smooth={true} duration={500} className='navLink'>Trending</Link>
+              <Link to="trending" smooth={true} duration={500} className='navLink'>Trending</Link>
             </li>
 
             <li className="navItem">
@@ -47,17 +61,17 @@ const Navbar = () => {
 
             <div className="headerBtns flex">
               <button className='btn'>
-                <Link to="/book" className='navLink'>Book Now</Link>
+                <Link to="#" className='navLink'>Book Now</Link>
               </button>
             </div>
           </ul>
 
-          <div className="closeNavbar">
+          <div onClick={removeNav} className="closeNavbar">
             <AiFillCloseCircle className='icon' />
           </div>
         </div>
 
-        <div  className='toggleNavbar'>
+        <div onClick={showNav} className='toggleNavbar'>
           <TbGridDots className='icon' />
         </div>
       </div>
@@ -66,4 +80,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-

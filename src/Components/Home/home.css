@@ -1,1 +1,73 @@
-/*# sourceMappingURL=home.css.map */
+:root {
+  --primaryColor: hsl(199, 100%, 33%);
+  --secondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 41%, 36%);
+  --whiteColorDemi: hsl(240, 42%, 93%);
+  --greyText: rgb(220, 210, 210);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --greyBg: rgb(240, 240, 240); /* Added value for greyBg */
+}
+
+.homeSection {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin: auto;
+  padding: 40px;
+  background-color: #1a1a2e;
+  color: white;
+}
+.homeSection .content {
+  max-width: 50%;
+}
+.homeSection .content h3 {
+  font-size: 48px;
+  font-weight: bold;
+}
+.homeSection .content p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+.homeSection .content .orderButton {
+  padding: 10px 20px;
+  background-color: var(--primaryColor);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+.homeSection .content .orderButton:hover {
+  background-color: var(--secondaryColor);
+  border: 1px solid white;
+}
+.homeSection .imageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.homeSection .imageContainer .bookCover {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.homeSection .imageContainer .related-books {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.homeSection .imageContainer .related-books .related-book img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}/*# sourceMappingURL=home.css.map */

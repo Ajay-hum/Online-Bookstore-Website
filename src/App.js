@@ -7,18 +7,26 @@ import Trending from './Components/Trending/Trending'
 import Deals from './Components/Deals/Deals'
 import Booklist from './Components/Booklist/Booklist'
 import Wishlist from './Components/Wishlist/Wishlist'
+import Footer from './Components/Footer/Footer'
 
 
 const App = () => {
   return (
     <>
     <Navbar/>
-    {/*<Home/>
-    <Categories/>
-    <Trending/>
-    <Deals/>
+    <div id="home">
+      <Home/>
+    </div>
+    <div id="categories">
+      <Categories/>
+    </div>
+    <div id="trending">
+      <Trending/>
+    </div>
+    {/*<Deals/>
     <Booklist/>
-    <Wishlist/>*/}
+    <Wishlist/>
+    <Footer/>*/}
     </>
   )
 }
