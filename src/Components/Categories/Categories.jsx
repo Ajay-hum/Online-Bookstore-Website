@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 import './categories.css'
 
+import { Link } from 'react-scroll'
 import { mockBooks } from '../../storage.js'
 
 const Categories = () => {
@@ -26,10 +27,11 @@ const Categories = () => {
     setSelectedBook(book);
   };
 
-
   return (
-    <div className="categorySection">
-      <h2>Select a Category</h2>
+    <section className="categorySection">
+      <div className="secHeader">
+        <h2>Select a Category</h2>
+      </div>
       <div className="categories">
         {Object.keys(mockBooks).map((category) => (
           <button
@@ -41,26 +43,30 @@ const Categories = () => {
           </button>
         ))}
       </div>
-      <div className="books">
-        <h3>Books in {selectedCategory}</h3>
-        <ul>
-          {books.map((book, index) => (
-            <li key={index} onClick={() => handleBookClick(book)}>
-              {book.title}
-            </li>
-          ))}
-        </ul>
-      </div>
-      {selectedBook && (
-        <div className="book-details">
-          <h4>{selectedBook.title}</h4>
-          <img src={selectedBook.image} alt={selectedBook.title} />
-          <p>{selectedBook.description}</p>
-          <button onClick={() => setSelectedBook(null)}>Close</button>
+      <div className="content">
+        <div className="books">
+          <h3>Books in {selectedCategory}</h3>
+          <ul>
+            {books.map((book, index) => (
+              <li key={index} onClick={() => handleBookClick(book)}>
+                {book.title}
+              </li>
+            ))}
+          </ul>
         </div>
-      )}
-    </div>
-  )
-}
+        {selectedBook && (
+          <div className="book-details">
+            <h4>{selectedBook.title}</h4>
+            <img src={selectedBook.image} alt={selectedBook.title} />
+            <p>{selectedBook.description}</p>
+            <button onClick={() => setSelectedBook(null)}>Close</button>
+            <Link to="#" className="btn">Book</Link>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+};
 
-export default Categories
+export default Categories;
+

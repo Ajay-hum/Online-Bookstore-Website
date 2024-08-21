@@ -1,0 +1,103 @@
+:root {
+  --primaryColor: hsl(199, 100%, 33%);
+  --secondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 41%, 36%);
+  --whiteColorDemi: hsl(240, 42%, 93%);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --greyBg: rgb(183, 179, 179); /* Added value for greyBg */
+  --greyText: rgb(146, 137, 137);
+  --box-shadow: 0 2px 8px rgba(66, 53, 53, 0.45);
+}
+
+.footer {
+  background: var(--greyText);
+  padding: 2rem 0;
+}
+.footer .secContainer {
+  gap: 1.5rem;
+  text-align: center;
+}
+.footer .secContainer .logoDiv .footerLogo {
+  padding-bottom: 0.5rem;
+}
+.footer .secContainer .logoDiv .footerLogo .logo {
+  color: rgb(231, 23, 23);
+  font-weight: 500;
+  cursor: pointer;
+  align-items: center;
+}
+.footer .secContainer .logoDiv .footerLogo .logo .icon {
+  font-size: 30px;
+  color: rgb(249, 0, 0);
+  margin-right: 0.5rem;
+}
+.footer .secContainer .logoDiv .footerLogo .logo .icon:hover {
+  color: var(--whiteColor);
+}
+.footer .secContainer .logoDiv .socials {
+  gap: 0.5rem;
+  margin: auto;
+  justify-content: center;
+  padding-top: 0.5rem;
+}
+.footer .secContainer .logoDiv .socials .icon {
+  color: black;
+  font-size: 25px;
+  background: var(--whiteColor);
+  border-radius: 0.2rem;
+  padding: 3px;
+}
+.footer .secContainer .logoDiv .socials .icon:hover {
+  background: rgb(213, 59, 59);
+}
+.footer .secContainer .footerLinks {
+  display: grid;
+  row-gap: 0.2rem;
+}
+.footer .secContainer .footerLinks .linkTitle {
+  padding-bottom: 0.5rem;
+  color: black;
+  font-weight: 700;
+}
+.footer .secContainer .footerLinks lihover {
+  transform: translateX(10px);
+}
+.footer .secContainer .footerLinks li a {
+  color: var(--primaryColor);
+  cursor: pointer;
+  font-weight: 600;
+}
+.footer .secContainer .footerLinks li a:hover {
+  color: var(--secondaryColor);
+}
+.footer .secContainer .footerLinks .phone, .footer .secContainer .footerLinks .E-mail {
+  color: rgb(249, 0, 0);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 448px) {
+  .secContainer {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    align-items: flex-start;
+  }
+  .secContainer .footerLinks {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 640px) {
+  .secContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 900px) {
+  .secContainer {
+    padding: 2rem;
+  }
+}/*# sourceMappingURL=footer.css.map */

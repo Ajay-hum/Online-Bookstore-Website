@@ -1,71 +1,77 @@
 :root {
-    --primaryColor: hsl(199, 100%, 33%);
-    --secondaryColor: hsl(187, 85%, 43%);
-    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
-    --whiteColor: hsl(0, 0%, 100%);
-    --blackColor: hsl(201, 33%, 16%);
-    --textColor: hsl(240, 41%, 36%);
-    --whiteColorDemi: hsl(240, 42%, 93%);
-    --inputColor: rgb(239, 239, 239);
-    --bodyColor: rgb(240, 240, 246);
-    --cardBG: rgb(225, 225, 235);
-    --greyBg: rgb(183, 179, 179); /* Added value for greyBg */
-    --greyText: rgb(146, 137, 137);
-    --box-shadow: 0 2px 8px rgba(66, 53, 53, 0.45);
+  --primaryColor: hsl(199, 100%, 33%);
+  --secondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 41%, 36%);
+  --whiteColorDemi: hsl(240, 42%, 93%);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --greyBg: rgb(183, 179, 179);
+  --greyText: rgb(146, 137, 137);
+  --box-shadow: 0 2px 8px rgba(66, 53, 53, 0.45);
 }
 
-.trendingSection {
-  padding: 40px;
-  background-color: var(--greyText);
-  color: #333;
+.trending {
+padding: 25px;
+background-color: var(--greyBg);
+color: var(--textColor);
 
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 36px;
-    color: black;
+  .secContainer {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
-  .trendingBooks {
+  .secHeader {
+    text-align: center;
+    margin-bottom: 20px;
+
+    .secTitle {
+      font-size: 36px;
+      color: var(--blackColor);
+    }
+  }
+
+  .trendingContent {
     display: flex;
-    overflow: hidden; // Hide overflow to show only visible items
-    width: calc(200px * 3 + 40px); // Width for three items plus gaps
-    position: relative; // For positioning book cards
-    gap: 20px; // Space between book cards
+    overflow: hidden;
+    gap: 20px;
     padding: 10px;
 
-    .bookCard{
+    .bookCard {
       position: relative;
-      align-items: center;
-      min-width: 200px; // Ensure cards have a minimum width
+      min-width: 200px;
       cursor: pointer;
-      border-radius: 10px; // Added border radius for consistency
-      overflow: hidden; // Ensures overlay does not overflow
-      transition: transform 0.5s ease; // Smooth transition for sliding
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: var(--box-shadow);
 
-      .bookCover {
-        width: 210px; // Fixed width
-        height: 300px; // Fixed height
-        object-fit: cover; // Ensures the image covers the area without distortion
-        border-radius: 10px; // Consistent with bookCard
-      }      
+      .bookImage {
+        position: relative;
 
-      .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.7);
-        color: white;
-        opacity: 0;
-        transition: opacity 0.3s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+          border-radius: 10px;
+        }
 
-        .overlayContent {
+        .overlayInfo {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.7);
+          color: var(--whiteColor);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
           text-align: center;
+          padding: 10px;
 
           h3 {
             font-size: 18px;
@@ -76,13 +82,44 @@
             font-size: 14px;
             margin: 5px 0 0;
           }
-        }
-      }
 
-      &:hover .overlay {
-        opacity: 1; // Show overlay on hover
+          .price {
+            font-size: 16px;
+            margin-top: 10px;
+            font-weight: bold;
+          }
+
+          .bookButton {
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: var(--primaryColor);
+            color: var(--whiteColor);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+
+            &:hover {
+              background-color: var(--secondaryColor);
+            }
+          }
+        }
       }
     }
   }
 }
 
+//Media Queries=================>
+@media screen and (min-width: 480px) {
+  .trending{
+    .secContainer{
+      .bookCard{
+        bottom: 10px;
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+        .btn{
+          transform: translateY(15px);
+        }
+      }
+    }
+  }
+}

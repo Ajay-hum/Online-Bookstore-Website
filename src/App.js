@@ -23,10 +23,14 @@ const App = () => {
     <div id="trending">
       <Trending/>
     </div>
-    {/*<Deals/>
-    <Booklist/>
-    <Wishlist/>
-    <Footer/>*/}
+    <div id="deals">
+      <Deals/>
+    </div>
+    <div id="booklist">
+      <Booklist/>
+    </div>
+    {/*<Wishlist/>*/}
+    <Footer/>
     </>
   )
 }

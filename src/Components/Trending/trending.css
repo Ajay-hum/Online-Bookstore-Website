@@ -9,71 +9,100 @@
   --inputColor: rgb(239, 239, 239);
   --bodyColor: rgb(240, 240, 246);
   --cardBG: rgb(225, 225, 235);
-  --greyBg: rgb(183, 179, 179); /* Added value for greyBg */
+  --greyBg: rgb(183, 179, 179);
   --greyText: rgb(146, 137, 137);
   --box-shadow: 0 2px 8px rgba(66, 53, 53, 0.45);
 }
 
-.trendingSection {
-  padding: 40px;
-  background-color: var(--greyText);
-  color: #333;
+.trending {
+  padding: 25px;
+  background-color: var(--greyBg);
+  color: var(--textColor);
 }
-.trendingSection h2 {
+.trending .secContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.trending .secHeader {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 36px;
-  color: black;
 }
-.trendingSection .trendingBooks {
+.trending .secHeader .secTitle {
+  font-size: 36px;
+  color: var(--blackColor);
+}
+.trending .trendingContent {
   display: flex;
   overflow: hidden;
-  width: 640px;
-  position: relative;
   gap: 20px;
   padding: 10px;
 }
-.trendingSection .trendingBooks .bookCard {
+.trending .trendingContent .bookCard {
   position: relative;
-  align-items: center;
   min-width: 200px;
   cursor: pointer;
   border-radius: 10px;
   overflow: hidden;
-  transition: transform 0.5s ease;
+  box-shadow: var(--box-shadow);
 }
-.trendingSection .trendingBooks .bookCard .bookCover {
-  width: 210px;
+.trending .trendingContent .bookCard .bookImage {
+  position: relative;
+}
+.trending .trendingContent .bookCard .bookImage img {
+  width: 100%;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
-.trendingSection .trendingBooks .bookCard .overlay {
+.trending .trendingContent .bookCard .bookImage .overlayInfo {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  opacity: 0;
-  transition: opacity 0.3s;
+  color: var(--whiteColor);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.trendingSection .trendingBooks .bookCard .overlay .overlayContent {
   text-align: center;
+  padding: 10px;
 }
-.trendingSection .trendingBooks .bookCard .overlay .overlayContent h3 {
+.trending .trendingContent .bookCard .bookImage .overlayInfo h3 {
   font-size: 18px;
   margin: 0;
 }
-.trendingSection .trendingBooks .bookCard .overlay .overlayContent p {
+.trending .trendingContent .bookCard .bookImage .overlayInfo p {
   font-size: 14px;
   margin: 5px 0 0;
 }
-.trendingSection .trendingBooks .bookCard:hover .overlay {
-  opacity: 1;
+.trending .trendingContent .bookCard .bookImage .overlayInfo .price {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.trending .trendingContent .bookCard .bookImage .overlayInfo .bookButton {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.trending .trendingContent .bookCard .bookImage .overlayInfo .bookButton:hover {
+  background-color: var(--secondaryColor);
+}
+
+@media screen and (min-width: 480px) {
+  .trending .secContainer .bookCard {
+    bottom: 10px;
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .trending .secContainer .bookCard .btn {
+    transform: translateY(15px);
+  }
 }/*# sourceMappingURL=trending.css.map */

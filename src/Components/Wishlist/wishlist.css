@@ -1,1 +1,15 @@
-/*# sourceMappingURL=wishlist.css.map */
+:root {
+  --primaryColor: hsl(199, 100%, 33%);
+  --secondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 41%, 36%);
+  --whiteColorDemi: hsl(240, 42%, 93%);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --greyBg: rgb(183, 179, 179); /* Added value for greyBg */
+  --greyText: rgb(146, 137, 137);
+  --box-shadow: 0 2px 8px rgba(66, 53, 53, 0.45);
+}/*# sourceMappingURL=wishlist.css.map */

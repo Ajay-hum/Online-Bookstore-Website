@@ -48,11 +48,11 @@ const Navbar = () => {
             </li>
 
             <li className="navItem">
-              <Link to="#" smooth={true} duration={500} className='navLink'>Offers</Link>
+              <Link to="deals" smooth={true} duration={500} className='navLink'>Offers</Link>
             </li>
 
             <li className="navItem">
-              <Link to="#" smooth={true} duration={500} className='navLink'>Booklist</Link>
+              <Link to="booklist" smooth={true} duration={500} className='navLink'>Booklist</Link>
             </li>
 
             <li className="navItem">
