@@ -31,6 +31,10 @@
   font-size: 36px;
   color: var(--blackColor);
 }
+.trending .secHeader p {
+  font-size: 17px;
+  color: black;
+}
 .trending .trendingContent {
   display: flex;
   overflow: hidden;

@@ -21,9 +21,16 @@
   box-shadow: var(--box-shadow);
 
   h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
+    margin-bottom: 10px;
+    font-size: 30px;
     color: var(--blackColor);
+  }
+
+  p{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 15px;
+    margin-top: none;
   }
 
   .categories {
@@ -57,8 +64,12 @@
     }
   }
 
-  .content{
+  .content {
+    display: flex; // Enable flexbox for side-by-side layout
+    gap: 20px; // Space between book list and book details
+  
     .books {
+      flex: 1; // Allow the book list to take available space
       h3 {
         margin-bottom: 10px;
         font-size: 20px;
@@ -82,7 +93,8 @@
     }
   
     .book-details {
-      margin-top: 20px;
+      //flex: 0 0 200px; // Fixed width for book details or adjust as needed
+      margin-top: 20px; // Ensure there's space above
       border: 1px solid #ccc;
       padding: 15px;
       border-radius: 5px;
@@ -107,7 +119,7 @@
         font-size: 16px;
         color: black;
       }
-
+  
       button {
         margin-top: 10px;
         padding: 5px 10px;
@@ -123,16 +135,16 @@
           border: 1px solid var(--blackColor);
         }
       }
-  
-      .btn{
-        margin-left: 30rem;
-        padding: 3px 10px;
+
+      .btn {
+        margin-top: 10px;
+        padding: 5px 10px;
+        margin-left: 340px;
         border: none;
         border-radius: 5px;
         background-color: var(--primaryColor);
-        color: var(--whiteColor);
+        color: var(--blackColor);
         cursor: pointer;
-        text-decoration: none;
         transition: background-color 0.3s;
   
         &:hover {
@@ -143,3 +155,15 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column; // Stack vertically on small screens
+
+    .book-details {
+      flex: 1; // Allow book details to take full width
+      margin-top: 10px; // Space above the details
+    }
+  }
+}
+

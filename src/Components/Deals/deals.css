@@ -65,4 +65,10 @@
   font-size: 1.1rem;
   color: #dc3545;
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .deals-list {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=deals.css.map */

@@ -115,4 +115,9 @@
 }
 
 
-  
+@media screen and (max-width: 480px) {
+  .bookListings {
+    flex-direction: row; // Stack book cards vertically
+    grid-template-rows: repeat(2, 1fr);
+  }
+} 

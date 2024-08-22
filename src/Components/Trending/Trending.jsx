@@ -79,7 +79,11 @@ const Trending = () => {
     <section className='trending section container'>
       <div className="secContainer">
         <div className="secHeader">
-          <h2 className="secTitle" data-aos="fade-right">📚 Trending Books 📚</h2>
+          <h2 className="secTitle" data-aos="fade-right" data-aos-duration="2000">📚 Trending Books 📚</h2>
+          <p data-aos="fade-right" data-aos-duration="2500">
+          Check out the books that our readers can’t get enough of! From thrilling mysteries 
+          to heartwarming romances, these titles are flying off the shelves.
+          </p>
         </div>
 
         <div data-aos="fade-up" className="trendingContent grid">

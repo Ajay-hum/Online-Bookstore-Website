@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react'
-import './categories.css'
-
-import { Link } from 'react-scroll'
-import { mockBooks } from '../../storage.js'
+import React, { useState, useEffect } from 'react';
+import './categories.css';
+import { Link } from 'react-scroll';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { mockBooks } from '../../storage.js';
 
 const Categories = () => {
   const [selectedCategory, setSelectedCategory] = useState('Fiction');
@@ -10,6 +11,7 @@ const Categories = () => {
   const [selectedBook, setSelectedBook] = useState(null);
 
   useEffect(() => {
+    Aos.init({ duration: 2000 });
     const storedBooks = localStorage.getItem('books');
     if (storedBooks) {
       setBooks(JSON.parse(storedBooks)[selectedCategory]);
@@ -30,7 +32,8 @@ const Categories = () => {
   return (
     <section className="categorySection">
       <div className="secHeader">
-        <h2>Select a Category</h2>
+        <h2 data-aos="fade-right" data-aos-duration="2000">Select a Category</h2>
+        <p data-aos="fade-right" data-aos-duration="2500">Explore Our Categories</p>
       </div>
       <div className="categories">
         {Object.keys(mockBooks).map((category) => (
@@ -69,4 +72,5 @@ const Categories = () => {
 };
 
 export default Categories;
+
 

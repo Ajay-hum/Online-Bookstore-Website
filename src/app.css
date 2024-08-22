@@ -77,24 +77,6 @@ li{
     color: var(--whiteColor);
 }
 
-.secIntro{
-    max-width: 70%;
-    text-align: center;
-    margin: 0 auto 2rem;
-}
-
-.secIntro .secTitle{
-    color: var(--blackColor);
-    line-height: 1.5rem;
-    padding-bottom: .5rem;
-}
-
-.secIntro p{
-    font-size: 15px;
-    color: var(--blackColor);
-    font-weight: 500;
-}
-
 img, video{
     width: 100%;
     height: auto;
@@ -102,4 +84,40 @@ img, video{
 
 input{
     font-size: 100%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /*Adjust base font size for smaller screens*/
+    }
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        font-size: 16px; /*Standard base font size for larger screens*/
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    body{
+        zoom: 1.7
+    }
+}
+
+/*Page design*/
+::selection{
+    background: var(--primaryColor);
+    color: var(--whiteColor)
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background: var(--greyBg);
+}
+
+::-webkit-scrollbar-thumb{
+    background: orangered;
+    border-radius: 10px;
+    cursor: pointer;
 }

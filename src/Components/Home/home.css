@@ -28,12 +28,12 @@
   max-width: 50%;
 }
 .homeSection .content h3 {
-  font-size: 48px;
+  font-size: 30px;
   font-weight: bold;
 }
 .homeSection .content p {
-  margin: 10px 0;
-  font-size: 16px;
+  margin: 10px;
+  font-size: 18px;
 }
 .homeSection .content .orderButton {
   padding: 10px 20px;
@@ -54,20 +54,42 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  max-width: 100%;
+  overflow: hidden;
 }
 .homeSection .imageContainer .bookCover {
-  width: 300px;
+  width: 100%;
   height: auto;
   margin-bottom: 20px;
   border-radius: 8px;
 }
-.homeSection .imageContainer .related-books {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+
+@media screen and (max-width: 768px) {
+  .homeSection {
+    flex-direction: row;
+    padding: 20px;
+  }
 }
-.homeSection .imageContainer .related-books .related-book img {
-  width: 100px;
-  height: auto;
-  border-radius: 5px;
+@media screen and (max-width: 480px) {
+  .homeSection {
+    padding: 20px;
+  }
+  .homeSection .content {
+    max-width: 100%;
+  }
+  .homeSection .content h3 {
+    font-size: 24px;
+  }
+  .homeSection .content p {
+    font-size: 14px;
+  }
+  .homeSection .content .orderButton {
+    font-size: 14px;
+  }
+  .imageContainer .bookCover {
+    width: 80%;
+    height: auto;
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=home.css.map */
