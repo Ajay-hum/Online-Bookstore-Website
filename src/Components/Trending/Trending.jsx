@@ -7,11 +7,11 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 // Import images for trending books
-import img1 from '../../Asset/Trending/img_1.jpeg';
-import img2 from '../../Asset/Trending/img_2.jpg';
-import img3 from '../../Asset/Trending/img_3.jpg';
-import img4 from '../../Asset/Trending/img_4.jpg';
-import img5 from '../../Asset/Trending/img_6.jpg';
+import img1 from '../../Asset/Trending/The_Midnight_Library.jpg';
+import img2 from '../../Asset/Trending/Project_Hail_Mary,_First_Edition_Cover_(2021).jpg';
+import img3 from '../../Asset/Trending/The_Vanishing_Half_(Brit_Bennett).png';
+import img4 from '../../Asset/Trending/Klara_and_the_Sun_(Kazuo_Ishiguro).png';
+import img5 from '../../Asset/Trending/InvisibleAddieLaRue.jpg';
 
 const trendingBooks = [
   {

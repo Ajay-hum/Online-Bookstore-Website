@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     transition: .3s ease;
+}
+
+body {
+    background-color: black;
+    color: #333;
 }
 
 /* Colors to use */
@@ -20,46 +25,46 @@
     --inputColor: rgb(239, 239, 239);
     --bodyColor: rgb(240, 240, 246);
     --cardBG: rgb(225, 225, 235);
-    --greyBg: rgb(183, 179, 179); /* Added value for greyBg */
+    --greyBg: rgb(183, 179, 179);
     --greyText: rgb(146, 137, 137);
     --box-shadow: 0 2px 8px rgba(66, 53, 53, 0.45);
 }
 
-  /* Note that this is a default styling that will apply to all codes */
-a{
+/* Default styling */
+a {
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
     cursor: pointer;
 }
 
-.section{
+.section {
     padding: 4rem 0 2rem;
 }
 
-.container{
+.container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
 
-.icon{
+.icon {
     font-size: 2rem;
     cursor: pointer;
 }
 
-.flex{
+.flex {
     display: flex;
     align-items: center;
 }
 
-.grid{
+.grid {
     display: grid;
     align-items: center;
 }
 
-.btn{
+.btn {
     padding: .4rem 1.5rem;
     background: var(--primaryColor);
     border-radius: 3rem;
@@ -68,56 +73,149 @@ li{
     cursor: pointer;
 }
 
-.btn a{
+.btn a {
     color: var(--whiteColor);
     font-weight: 500;
 }
 
-.btn:hover a{
+.btn:hover a {
     color: var(--whiteColor);
 }
 
-img, video{
+img, video {
     width: 100%;
     height: auto;
 }
 
-input{
+input {
     font-size: 100%;
 }
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
     body {
-        font-size: 14px; /*Adjust base font size for smaller screens*/
+        font-size: 14px; /* Adjust base font size for smaller screens */
+    }
+
+    .navLists {
+        flex-direction: column; /* Stack nav items on smaller screens */
+    }
+
+    .bookCard {
+        flex-direction: column; /* Stack book card elements */
+    }
+
+    .trendingContent {
+        grid-template-columns: repeat(1, 1fr); /* Show one trending book at a time */
+    }
+
+    .dealslist {
+        grid-template-columns: repeat(2, 1fr); /* Show one deal at a time */
+    }
+
+    .bookListings {
+        flex-direction: row; /* Stack book listings */
     }
 }
 
 @media screen and (min-width: 769px) {
     body {
-        font-size: 16px; /*Standard base font size for larger screens*/
+        font-size: 16px; /* Standard base font size for larger screens */
+    }
+
+    .trendingContent {
+        grid-template-columns: repeat(3, 1fr); /* Show three trending books */
+    }
+
+    .dealslist {
+        grid-template-columns: repeat(2, 1fr); /* Show two deals */
+    }
+
+    .bookListings {
+        flex-direction: row; /* Arrange book listings in a row */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (min-width: 2560px) {
-    body{
-        zoom: 1.7
+    body {
+        zoom: 1.7;
     }
 }
 
-/*Page design*/
-::selection{
+/* Page design */
+::selection {
     background: var(--primaryColor);
-    color: var(--whiteColor)
+    color: var(--whiteColor);
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
     background: var(--greyBg);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: orangered;
     border-radius: 10px;
     cursor: pointer;
+}
+
+/* Additional Component-Specific Styles */
+
+/* Navbar */
+.navBarSection {
+    background: var(--whiteColor);
+    box-shadow: var(--box-shadow);
+}
+
+.navItem {
+    margin: 0 1rem;
+}
+
+/* Categories */
+.categorySection {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+}
+
+.book-details {
+    text-align: center;
+}
+
+/* Trending */
+.trending {
+    padding: 2rem 0;
+}
+
+.bookCard {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Home */
+.homeSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Deals */
+.deals {
+    padding: 2rem 0;
+}
+
+.deal-Card {
+    margin: 1rem;
+}
+
+/* BookList */
+.bookListingsSection {
+    padding: 2rem 0;
+}
+
+.bookCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -93,10 +93,10 @@
     }
   
     .book-details {
-      //flex: 0 0 200px; // Fixed width for book details or adjust as needed
-      margin-top: 20px; // Ensure there's space above
+      flex: 0 0 200px; // Fixed width for book details or adjust as needed
+      //margin-top: 10px; // Ensure there's space above
       border: 1px solid #ccc;
-      padding: 15px;
+      //padding: 1px;
       border-radius: 5px;
       background-color: var(--whiteColor);
       box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
@@ -108,7 +108,7 @@
       }
   
       img {
-        max-width: 100%;
+        max-width: 60%;
         height: auto;
         margin-bottom: 10px;
         border-radius: 5px;

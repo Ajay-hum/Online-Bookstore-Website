@@ -38,13 +38,6 @@ const dailyDeals = [
     price: '$8.49'
   },
   {
-    title: 'The Vanishing Half',
-    image: 'https://example.com/vanishinghalf.jpg',
-    description: 'A multi-generational story about two twin sisters who choose different paths.',
-    discount: '10% off',
-    price: '$11.69'
-  },
-  {
     title: 'Little Fires Everywhere',
     image: 'https://example.com/littlefires.jpg',
     description: 'A story about the intertwined lives of a mother and daughter in a suburban town.',
@@ -59,13 +52,6 @@ const dailyDeals = [
     price: '$11.24'
   },
   {
-    title: 'The Midnight Library',
-    image: 'https://example.com/midnightlibrary.jpg',
-    description: 'A novel about the choices that go into a life well lived.',
-    discount: '10% off',
-    price: '$12.59'
-  },
-  {
     title: 'The Henna Artist',
     image: 'https://example.com/hennartist.jpg',
     description: 'A story of love, betrayal, and self-discovery set in 1950s India.',
@@ -76,11 +62,13 @@ const dailyDeals = [
 
 const Deals = () => {
   return (
-    <div className="deals-container">
-      <h2>Daily Deals</h2>
-      <div className="deals-list">
+    <section className="deals section container">
+      <div className="secHeader">
+        <h2 className="secTitle">Daily Deals</h2>
+      </div>
+      <div className="dealslist">
         {dailyDeals.map((deal, index) => (
-          <div className="deal-card" key={index}>
+          <div className="deal-Card" key={index}>
             <img src={deal.image} alt={deal.title} />
             <h3>{deal.title}</h3>
             <p>{deal.description}</p>
@@ -89,7 +77,7 @@ const Deals = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

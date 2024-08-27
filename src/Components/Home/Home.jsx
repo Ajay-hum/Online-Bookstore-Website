@@ -2,7 +2,7 @@ import React from 'react'
 import './home.css'
 
 import { Link } from "react-scroll"
-import img1 from '../../Asset/Trending/img_1.jpeg'
+import img1 from '../../Asset/Trending/The_Midnight_Library.jpg'
 
 const Home = () => {
   return (

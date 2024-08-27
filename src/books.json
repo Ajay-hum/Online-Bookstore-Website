@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "title": "The Great Gatsby",
     "image": "https://example.com/gatsby.jpg",
     "description": "A novel about the American dream set in the 1920s.",
@@ -7,6 +8,7 @@
     "price": "$10.99"
   },
   {
+    "id": "2",
     "title": "To Kill a Mockingbird",
     "image": "https://example.com/mockingbird.jpg",
     "description": "A story of racial injustice in the Deep South.",
@@ -14,6 +16,7 @@
     "price": "$12.99"
   },
   {
+    "id": "3",
     "title": "1984",
     "image": "https://example.com/1984.jpg",
     "description": "A dystopian novel about totalitarianism.",
@@ -21,6 +24,7 @@
     "price": "$9.99"
   },
   {
+    "id": "4",
     "title": "Pride and Prejudice",
     "image": "https://example.com/pride.jpg",
     "description": "A romantic novel that critiques the British landed gentry.",
@@ -28,6 +32,7 @@
     "price": "$11.99"
   },
   {
+    "id": "5",
     "title": "The Catcher in the Rye",
     "image": "https://example.com/catcher.jpg",
     "description": "A story about teenage angst and alienation.",
@@ -35,6 +40,7 @@
     "price": "$10.99"
   },
   {
+    "id": "6",
     "title": "The Alchemist",
     "image": "https://example.com/alchemist.jpg",
     "description": "A novel about following your dreams and personal legend.",
@@ -42,6 +48,7 @@
     "price": "$14.99"
   },
   {
+    "id": "7",
     "title": "The Road",
     "image": "https://example.com/road.jpg",
     "description": "A post-apocalyptic tale of a father and son’s journey.",
@@ -49,6 +56,7 @@
     "price": "$13.99"
   },
   {
+    "id": "8",
     "title": "Sapiens",
     "image": "https://example.com/sapiens.jpg",
     "description": "A brief history of humankind.",
@@ -56,6 +64,7 @@
     "price": "$15.99"
   },
   {
+    "id": "9",
     "title": "Educated",
     "image": "https://example.com/educated.jpg",
     "description": "A memoir about a woman who grows up in a strict and abusive household.",
@@ -63,6 +72,7 @@
     "price": "$12.99"
   },
   {
+    "id": "10",
     "title": "Becoming",
     "image": "https://example.com/becoming.jpg",
     "description": "Michelle Obama’s memoir about her life.",
@@ -70,6 +80,7 @@
     "price": "$16.99"
   },
   {
+    "id": "11",
     "title": "The Immortal Life of Henrietta Lacks",
     "image": "https://example.com/henrietta.jpg",
     "description": "The story of Henrietta Lacks and the immortal cell line derived from her cancer cells.",
@@ -77,6 +88,7 @@
     "price": "$14.99"
   },
   {
+    "id": "12",
     "title": "Born a Crime",
     "image": "https://example.com/bornacrime.jpg",
     "description": "Trevor Noah’s memoir about growing up in South Africa.",
@@ -84,6 +96,7 @@
     "price": "$13.99"
   },
   {
+    "id": "13",
     "title": "The Body Keeps the Score",
     "image": "https://example.com/body.jpg",
     "description": "A book about trauma and its effects on the body and mind.",
@@ -91,6 +104,7 @@
     "price": "$15.99"
   },
   {
+    "id": "14",
     "title": "The Wright Brothers",
     "image": "https://example.com/wright.jpg",
     "description": "The story of the pioneers of aviation.",
@@ -98,6 +112,7 @@
     "price": "$12.99"
   },
   {
+    "id": "15",
     "title": "Outliers",
     "image": "https://example.com/outliers.jpg",
     "description": "A study of the factors that contribute to high levels of success.",
@@ -105,6 +120,7 @@
     "price": "$11.99"
   },
   {
+    "id": "16",
     "title": "Gone Girl",
     "image": "https://example.com/gonegirl.jpg",
     "description": "A thriller about a woman’s disappearance.",
@@ -112,6 +128,7 @@
     "price": "$14.99"
   },
   {
+    "id": "17",
     "title": "The Girl with the Dragon Tattoo",
     "image": "https://example.com/dragon.jpg",
     "description": "A journalist and a hacker investigate a decades-old disappearance.",
@@ -119,6 +136,7 @@
     "price": "$13.99"
   },
   {
+    "id": "18",
     "title": "The Da Vinci Code",
     "image": "https://example.com/davinci.jpg",
     "description": "A mystery thriller involving secret societies and historical secrets.",
@@ -126,6 +144,7 @@
     "price": "$15.99"
   },
   {
+    "id": "19",
     "title": "Big Little Lies",
     "image": "https://example.com/biglittlelies.jpg",
     "description": "A story about murder, society, and the secrets of three women.",
@@ -133,6 +152,7 @@
     "price": "$12.99"
   },
   {
+    "id": "20",
     "title": "The Woman in the Window",
     "image": "https://example.com/womaninwindow.jpg",
     "description": "A psychological thriller about an agoraphobic woman.",
@@ -140,6 +160,7 @@
     "price": "$13.99"
   },
   {
+    "id": "21",
     "title": "The Silent Patient",
     "image": "https://example.com/silentpatient.jpg",
     "description": "A psychological thriller about a woman who stops speaking after a crime.",
@@ -148,6 +169,7 @@
     "discount": "20% off"
   },
   {
+    "id": "22",
     "title": "In the Woods",
     "image": "https://example.com/woods.jpg",
     "description": "A detective investigates a murder that echoes his childhood.",
@@ -155,13 +177,15 @@
     "price": "$11.99"
   },
   {
+    "id": "23",
     "title": "The Cuckoo's Calling",
     "image": "https://example.com/cuckoo.jpg",
-    "description": "A private investigator investigates a supermodel’s suicide.",
+    "description": "A private investigator investigates a supermodel's suicide.",
     "author": "Robert Galbraith",
     "price": "$12.99"
   },
   {
+    "id": "24",
     "title": "Unbroken",
     "image": "https://example.com/unbroken.jpg",
     "description": "A World War II story of survival and resilience.",
@@ -169,13 +193,15 @@
     "price": "$14.99"
   },
   {
+    "id": "25",
     "title": "1776",
     "image": "https://example.com/1776.jpg",
-    "description": "A detailed account of the year of America’s independence.",
+    "description": "A detailed account of the year of America's independence.",
     "author": "David McCullough",
     "price": "$10.99"
   },
   {
+    "id": "26",
     "title": "The Devil in the White City",
     "image": "https://example.com/devil.jpg",
     "description": "A tale of murder, magic, and madness at the fair that changed America.",
@@ -183,6 +209,7 @@
     "price": "$12.99"
   },
   {
+    "id": "27",
     "title": "A People’s History of the United States",
     "image": "https://example.com/peopleshistory.jpg",
     "description": "A perspective on U.S. history from the viewpoint of the marginalized.",
@@ -190,6 +217,7 @@
     "price": "$11.99"
   },
   {
+    "id": "28",
     "title": "Guns, Germs, and Steel",
     "image": "https://example.com/guns.jpg",
     "description": "An exploration of the factors that shaped human history.",
@@ -197,20 +225,7 @@
     "price": "$14.99"
   },
   {
-    "title": "The Guest List",
-    "image": "https://example.com/guestlist.jpg",
-    "description": "A wedding celebration turns deadly on a remote island.",
-    "author": "Lucy Foley",
-    "price": "$13.99"
-  },
-  {
-    "title": "The Last House on Needless Street",
-    "image": "https://example.com/lasthouse.jpg",
-    "description": "A psychological thriller that blurs the lines of reality.",
-    "author": "Caitlin R. Kiernan",
-    "price": "$12.99"
-  },
-  {
+    "id": "29",
     "title": "The Midnight Library",
     "image": "https://example.com/Midnightlibrary.jpg",
     "description": "A novel about the choices that go into a life well lived.",
@@ -218,6 +233,7 @@
     "price": "$11.99"
   },
   {
+    "id": "30",
     "title": "Project Hail Mary",
     "image": "https://example.com/ProjectHailMary.jpg",
     "description": "A lone astronaut must save Earth from disaster.",
@@ -225,6 +241,7 @@
     "price": "$15.99"
   },
   {
+    "id": "31",
     "title": "The Vanishing Half",
     "image": "https://example.com/Vanishinghalf.jpg",
     "description": "A multi-generational story about two twin sisters.",
@@ -232,6 +249,7 @@
     "price": "$13.99"
   },
   {
+    "id": "32",
     "title": "Klara and the Sun",
     "image": "https://example.com/KlaraandtheSun.jpg",
     "description": "A story about an artificial friend and the nature of love.",
@@ -239,6 +257,7 @@
     "price": "$12.99"
   },
   {
+    "id": "33",
     "title": "The Invisible Life of Addie LaRue",
     "image": "https://example.com/addie.jpg",
     "description": "A young woman makes a Faustian bargain to live forever.",
@@ -246,18 +265,67 @@
     "price": "$14.99"
   },
   {
-    "title": "Malibu Rising",
-    "image": "https://example.com/MalibuRising.jpg",
-    "description": "A story about a family’s annual summer party and its secrets.",
-    "author": "Taylor Jenkins Reid",
-    "price": "$13.99"
+    "id": "34",
+    "title": "The Night Circus",
+    "image": "https://example.com/nightcircus.jpg",
+    "description": "A magical competition between two young illusionists in a mysterious circus.",
+    "discount": "15% off",
+    "price": "$12.74"
   },
   {
-    "title": "Where the Crawdads Sing",
-    "image": "https://example.com/crawdads.jpg",
-    "description": "A coming-of-age story set in the marshes of North Carolina.",
-    "author": "Delia Owens",
-    "price": "$12.74",
-    "discount": "10% off"
+    "id": "35",
+    "title": "Circe",
+    "image": "https://example.com/circe.jpg",
+    "description": "A retelling of the story of Circe, the witch from The Odyssey.",
+    "discount": "20% off",
+    "price": "$11.99"
+  },
+  {
+    "id": "36",
+    "title": "Anxious People",
+    "image": "https://example.com/anxiouspeople.jpg",
+    "description": "A poignant story about a bank robbery gone wrong and the people involved.",
+    "discount": "10% off",
+    "price": "$13.49"
+  },
+  {
+    "id": "37",
+    "title": "The Seven Husbands of Evelyn Hugo",
+    "image": "https://example.com/evelynhugo.jpg", 
+    "description": "A reclusive Hollywood icon recounts her glamorous life and seven marriages.",
+    "discount": "25% off",
+    "price": "$9.99"
+  },
+  {
+    "id": "38",
+    "title": "The Invisible Man",
+    "image": "https://example.com/invisibleman.jpg",
+    "description": "A classic science fiction story about a man who becomes invisible.",
+    "discount": "15% off",
+    "price": "$8.49"
+  },
+  {
+    "id": "39",
+    "title": "Little Fires Everywhere",
+    "image": "https://example.com/littlefires.jpg",
+    "description": "A story about the intertwined lives of a mother and daughter in a suburban town.",
+    "discount": "20% off",
+    "price": "$10.99"
+  },
+  {
+    "id": "40",
+    "title": "The Song of Achilles",
+    "image": "https://example.com/songofachilles.jpg",
+    "description": "A retelling of the Iliad from the perspective of Patroclus.",
+    "discount": "15% off",
+    "price": "$11.24"
+  },
+  {
+    "id": "41",
+    "title": "The Henna Artist",
+    "image": "https://example.com/hennartist.jpg",
+    "description": "A story of love, betrayal, and self-discovery set in 1950s India.",
+    "discount": "20% off",
+    "price": "$10.99"
   }
 ]

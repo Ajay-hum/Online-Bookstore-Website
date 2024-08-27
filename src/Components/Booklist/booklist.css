@@ -100,9 +100,11 @@
   background-color: #218838;
 }
 
-@media screen and (max-width: 480px) {
-  .bookListings {
+@media screen and (min-width: 480px) {
+  .bookListingsSection .bookListings {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bookListingsSection .bookListings .bookCard {
     flex-direction: row;
-    grid-template-rows: repeat(2, 1fr);
   }
 }/*# sourceMappingURL=booklist.css.map */

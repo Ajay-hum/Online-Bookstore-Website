@@ -5,43 +5,43 @@ const mockBooks = {
     {
       id: 1,
       title: 'The Great Gatsby',
-      image: 'https://example.com/gatsby.jpg',
+      image: require('./Asset/Fiction/The_Great_Gatsby_Cover_1925_Retouched.jpg'),
       description: 'A novel about the American dream set in the 1920s.',
     },
     {
       id: 2,
       title: 'To Kill a Mockingbird',
-      image: 'https://example.com/mockingbird.jpg',
+      image: require('./Asset/Fiction/To_Kill_a_Mockingbird_(first_edition_cover) (1).jpg'),
       description: 'A story of racial injustice in the Deep South.',
     },
     {
       id: 3,
       title: '1984',
-      image: 'https://example.com/1984.jpg',
+      image: require('./Asset/Fiction/1984_first_edition_cover.jpg'),
       description: 'A dystopian novel about totalitarianism.',
     },
     {
       id: 4,
       title: 'Pride and Prejudice',
-      image: 'https://example.com/pride.jpg',
+      image: require('./Asset/Fiction/PrideAndPrejudiceTitlePage.jpg'),
       description: 'A romantic novel that critiques the British landed gentry.',
     },
     {
       id: 5,
       title: 'The Catcher in the Rye',
-      image: 'https://example.com/catcher.jpg',
+      image: require('./Asset/Fiction/The_Catcher_in_the_Rye_(1951,_first_edition_cover).jpg'),
       description: 'A story about teenage angst and alienation.',
     },
     {
       id: 6,
       title: 'The Alchemist',
-      image: 'https://example.com/alchemist.jpg',
+      image: require('./Asset/Fiction/TheAlchemist.jpg'),
       description: 'A novel about following your dreams and personal legend.',
     },
     {
       id: 7,
       title: 'The Road',
-      image: 'https://example.com/road.jpg',
+      image: require('./Asset/Fiction/The-road.jpg'),
       description: "A post-apocalyptic tale of a father and son’s journey.",
     },
   ],
@@ -49,49 +49,49 @@ const mockBooks = {
     {
       id: 8,
       title: 'Sapiens',
-      image: 'https://example.com/sapiens.jpg',
+      image: require('./Asset/Non-Fiction/sapiens.jpg'),
       description: 'A brief history of humankind.',
     },
     {
       id: 9,
       title: 'Educated',
-      image: 'https://example.com/educated.jpg',
+      image: require('./Asset/Non-Fiction/Educated_(Tara_Westover).png'),
       description: 'A memoir about a woman who grows up in a strict and abusive household.',
     },
     {
       id: 10,
       title: 'Becoming',
-      image: 'https://example.com/becoming.jpg',
+      image: require('./Asset/Non-Fiction/Becoming_(Michelle_Obama_book).jpg'),
       description: "Michelle Obama’s memoir about her life.",
     },
     {
       id: 11,
       title: 'The Immortal Life of Henrietta Lacks',
-      image: 'https://example.com/henrietta.jpg',
+      image: require('./Asset/Non-Fiction/The_Immortal_Life_Henrietta_Lacks_(cover).jpg'),
       description: 'The story of Henrietta Lacks and the immortal cell line derived from her cancer cells.',
     },
     {
       id: 12,
       title: 'Born a Crime',
-      image: 'https://example.com/bornacrime.jpg',
+      image: require('./Asset/Non-Fiction/Born_a_Crime_by_Trevor_Noah_(book_cover).jpg'),
       description: "Trevor Noah’s memoir about growing up in South Africa.",
     },
     {
       id: 13,
       title: 'The Body Keeps the Score',
-      image: 'https://example.com/body.jpg',
+      image: require('./Asset/Non-Fiction/TheBodyKeepstheScore.jpg'),
       description: 'A book about trauma and its effects on the body and mind.',
     },
     {
       id: 14,
       title: 'The Wright Brothers',
-      image: 'https://example.com/wright.jpg',
+      image: require('./Asset/Non-Fiction/The Wright Brothers.jpg'),
       description: 'The story of the pioneers of aviation.',
     },
     {
       id: 15,
       title: 'Outliers',
-      image: 'https://example.com/outliers.jpg',
+      image: require('./Asset/Non-Fiction/Outliers_(book_cover).png'),
       description: 'A study of the factors that contribute to high levels of success.',
     },
   ],
@@ -99,13 +99,13 @@ const mockBooks = {
     {
       id: 16,
       title: 'Gone Girl',
-      image: 'https://example.com/gonegirl.jpg',
+      image: require('./Asset/Mystery/Gone_Girl_(Flynn_novel).jpg'),
       description: "A thriller about a woman’s disappearance.",
     },
     {
       id: 17,
       title: 'The Girl with the Dragon Tattoo',
-      image: 'https://example.com/dragon.jpg',
+      image: require('./Asset/Mystery/Thegirlwiththedragontattoo.jpg'),
       description: 'A journalist and a hacker investigate a decades-old disappearance.',
     },
     {
@@ -129,7 +129,7 @@ const mockBooks = {
     {
       id: 21,
       title: 'The Silent Patient',
-      image: 'https://example.com/silentpatient.jpg',
+      image: require('./Asset/Mystery/The_Silent_Patient_early_2019_UK_edition.png'),
       description: 'A psychological thriller about a woman who stops speaking after a crime.',
     },
     {
@@ -185,14 +185,8 @@ const mockBooks = {
     {
       id: 30,
       title: 'Guns, Germs, and Steel',
-      image: 'https://example.com/guns.jpg',
+      image: require('./Asset/History/Guns, Germs and Steel.jpg'),
       description: 'An exploration of the factors that shaped human history.',
-    },
-    {
-      id: 31,
-      title: 'The Wright Brothers',
-      image: 'https://example.com/wrightbrothers.jpg',
-      description: 'A biography of the brothers who invented the airplane.',
     },
   ],
 };
@@ -202,43 +196,28 @@ const mockBooks = {
 const trendingBooks = [
   {
     title: 'The Midnight Library',
-    image: require('./Asset/Trending/img_1.jpeg'),
+    image: require('./Asset/Trending/The_Midnight_Library.jpg'),
     description: 'A novel about the choices that go into a life well lived.',
   },
   {
     title: 'Project Hail Mary',
-    image: require('./Asset/Trending/img_2.jpg'),
+    image: require('./Asset/Trending/Project_Hail_Mary,_First_Edition_Cover_(2021).jpg'),
     description: 'A lone astronaut must save Earth from disaster.',
   },
   {
     title: 'The Vanishing Half',
-    image: require('./Asset/Trending/img_3.jpg'),
+    image: require('./Asset/Trending/The_Vanishing_Half_(Brit_Bennett).png'),
     description: 'A multi-generational story about two twin sisters.',
   },
   {
     title: 'Klara and the Sun',
-    image: require('./Asset/Trending/img_4.jpg'),
+    image: require('./Asset/Trending/Klara_and_the_Sun_(Kazuo_Ishiguro).png'),
     description: 'A story about an artificial friend and the nature of love.',
   },
   {
     title: 'The Invisible Life of Addie LaRue',
-    image: 'https://example.com/addie.jpg',
+    image: require('./Asset/Trending/InvisibleAddieLaRue.jpg'),
     description: 'A young woman makes a Faustian bargain to live forever.',
-  },
-  {
-    title: 'Malibu Rising',
-    image: require('./Asset/Trending/img_6.jpg'),
-    description: "A story about a family’s annual summer party and its secrets.",
-  },
-  {
-    title: 'The Guest List',
-    image: 'https://example.com/guestlist.jpg',
-    description: 'A wedding celebration turns deadly on a remote island.',
-  },
-  {
-    title: 'The Last House on Needless Street',
-    image: 'https://example.com/lasthouse.jpg',
-    description: 'A psychological thriller that blurs the lines of reality.',
   },
 ];
 
@@ -280,13 +259,6 @@ const dailyDeals = [
     price: '$8.49'
   },
   {
-    title: 'The Vanishing Half',
-    image: 'https://example.com/vanishinghalf.jpg',
-    description: 'A multi-generational story about two twin sisters who choose different paths.',
-    discount: '10% off',
-    price: '$11.69'
-  },
-  {
     title: 'Little Fires Everywhere',
     image: 'https://example.com/littlefires.jpg',
     description: 'A story about the intertwined lives of a mother and daughter in a suburban town.',
@@ -299,13 +271,6 @@ const dailyDeals = [
     description: 'A retelling of the Iliad from the perspective of Patroclus.',
     discount: '15% off',
     price: '$11.24'
-  },
-  {
-    title: 'The Midnight Library',
-    image: 'https://example.com/midnightlibrary.jpg',
-    description: 'A novel about the choices that go into a life well lived.',
-    discount: '10% off',
-    price: '$12.59'
   },
   {
     title: 'The Henna Artist',
