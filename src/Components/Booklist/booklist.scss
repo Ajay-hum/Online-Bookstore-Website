@@ -15,12 +15,13 @@
   --box-shadow: 0 2px 8px rgba(66, 53, 53, 0.45);
 }
 
-.bookListingsSection {
+.bookList {
   padding: 40px;
   background-color: #f4f4f4;
   color: #333;
 
   h2 {
+    margin-top: 2.5rem;
     text-align: center;
     margin-bottom: 20px;
     font-size: 36px;
@@ -38,7 +39,7 @@
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       overflow: hidden;
-      width: 200px; // Fixed width for consistency
+      width: 250px; // Fixed width for consistency
       transition: transform 0.3s ease;
 
       &:hover {
@@ -116,10 +117,10 @@
 
 
 @media screen and (min-width: 480px) {
-  .bookListingsSection{
+  .bookList{
     .bookListings {
-      grid-template-columns: repeat(2, 1fr);
       .bookCard{
+        grid-template-columns: repeat(2, 1fr);
         flex-direction: row; // Stack book cards vertically
       }
     }

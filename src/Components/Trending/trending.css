@@ -29,7 +29,8 @@
 }
 .trending .secHeader .secTitle {
   font-size: 36px;
-  color: var(--blackColor);
+  margin-top: 3rem;
+  color: black;
 }
 .trending .secHeader p {
   font-size: 17px;

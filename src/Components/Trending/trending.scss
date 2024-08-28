@@ -15,9 +15,9 @@
 }
 
 .trending {
-padding: 25px;
-background-color: var(--greyBg);
-color: var(--textColor);
+  padding: 25px;
+  background-color: var(--greyBg);
+  color: var(--textColor);
 
   .secContainer {
     max-width: 1200px;
@@ -30,7 +30,8 @@ color: var(--textColor);
 
     .secTitle {
       font-size: 36px;
-      color: var(--blackColor);
+      margin-top: 3rem;
+      color: black;
     }
 
     p{

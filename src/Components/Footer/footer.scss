@@ -15,7 +15,7 @@
 }
 
 .footer{
-    background: var(--greyText);
+    background: rgb(8, 8, 54);
     padding: 2rem 0;
 
     .secContainer{
@@ -68,7 +68,7 @@
 
             .linkTitle{
                 padding-bottom: .5rem;
-                color: black;
+                color: white;
                 font-weight: 700;
             }
 
@@ -78,12 +78,12 @@
                 }
 
                 a{
-                    color: var(--primaryColor);
+                    color: rgb(249, 0, 0);
                     cursor: pointer;
                     font-weight: 600;
 
                     &:hover{
-                        color: var(--secondaryColor);
+                        color: var(--whiteColorDemi);
                     }
                 }
             }

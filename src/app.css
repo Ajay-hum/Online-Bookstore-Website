@@ -190,6 +190,7 @@ input {
 
 .bookCard {
     position: relative;
+    flex-direction: column;
     overflow: hidden;
 }
 
@@ -205,17 +206,17 @@ input {
     padding: 2rem 0;
 }
 
-.deal-Card {
+.deal-Card {/*Problem here*/
     margin: 1rem;
 }
 
 /* BookList */
-.bookListingsSection {
+.bookList {
     padding: 2rem 0;
 }
 
-.bookCard {
+.book-Card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }

@@ -14,7 +14,7 @@
 }
 
 .homeSection {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,6 +26,7 @@
 
   .content {
     max-width: 50%;
+    //justify-content: center;
 
     h3 {
       font-size: 30px;
@@ -35,6 +36,7 @@
     p {
       margin: 10px;
       font-size: 18px;
+      margin-bottom: 20px;
     }
 
     .orderButton {
@@ -42,7 +44,7 @@
       background-color: var(--primaryColor);
       border: none;
       border-radius: 5px;
-      color: white;
+      color: black;
       border: 1px solid transparent;
       cursor: pointer;
       font-size: 16px;
@@ -58,14 +60,13 @@
   .imageContainer {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     max-width: 100%;
     overflow: hidden;
 
     .bookCover {
       width: 100%; // Adjust as needed
       height: auto;
-      margin-bottom: 20px;
+      margin-bottom: 1px;
       border-radius: 8px;
     }
   }
@@ -73,38 +74,38 @@
 
 @media screen and (max-width: 768px) {
   .homeSection {
-      flex-direction: row; // Stack content and image vertically
-      padding: 20px; // Adjust padding for smaller screens
+    flex-direction: row; // Stack content and image vertically
+    padding: 20px; // Adjust padding for smaller screens
   }
 }
 
 @media screen and (max-width: 480px) {
   .homeSection {
-      padding: 20px; // Adjust padding for smaller screens
+    padding: 20px; // Adjust padding for smaller screens
 
-      .content {
-          max-width: 100%; // Allow content to take full width on mobile
+    .content {
+      max-width: 100%; // Allow content to take full width on mobile
 
-          h3 {
-              font-size: 24px; // Reduce font size for mobile
-          }
-
-          p {
-              font-size: 14px; // Adjust paragraph font size
-          }
-
-          .orderButton {
-              font-size: 14px; // Reduce button font size
-          }
+      h3 {
+        font-size: 24px; // Reduce font size for mobile
       }
+
+      p {
+        font-size: 14px; // Adjust paragraph font size
+      }
+
+      .orderButton {
+        font-size: 14px; // Reduce button font size
+      }
+    }
   }
 
   .imageContainer {
-      .bookCover {
-          width: 80%; // Adjust width for mobile
-          height: auto; // Maintain aspect ratio
-          max-width: 300px; // Optional: limit max width
-          margin: 0 auto; // Center the image
-      }
+    .bookCover {
+      width: 80%; // Adjust width for mobile
+      height: auto; // Maintain aspect ratio
+      max-width: 300px; // Optional: limit max width
+      margin: 0 auto; // Center the image
+    }
   }
 }

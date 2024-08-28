@@ -64,11 +64,11 @@ const Deals = () => {
   return (
     <section className="deals section container">
       <div className="secHeader">
-        <h2 className="secTitle">Daily Deals</h2>
+        <h1 className="secTitle">📚 Exclusive Offers 🌟</h1>
       </div>
       <div className="dealslist">
         {dailyDeals.map((deal, index) => (
-          <div className="deal-Card" key={index}>
+          <div className="dealCard" key={index}>
             <img src={deal.image} alt={deal.title} />
             <h3>{deal.title}</h3>
             <p>{deal.description}</p>

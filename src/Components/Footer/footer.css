@@ -15,7 +15,7 @@
 }
 
 .footer {
-  background: var(--greyText);
+  background: rgb(8, 8, 54);
   padding: 2rem 0;
 }
 .footer .secContainer {
@@ -61,19 +61,19 @@
 }
 .footer .secContainer .footerLinks .linkTitle {
   padding-bottom: 0.5rem;
-  color: black;
+  color: white;
   font-weight: 700;
 }
 .footer .secContainer .footerLinks lihover {
   transform: translateX(10px);
 }
 .footer .secContainer .footerLinks li a {
-  color: var(--primaryColor);
+  color: rgb(249, 0, 0);
   cursor: pointer;
   font-weight: 600;
 }
 .footer .secContainer .footerLinks li a:hover {
-  color: var(--secondaryColor);
+  color: var(--whiteColorDemi);
 }
 .footer .secContainer .footerLinks .phone, .footer .secContainer .footerLinks .E-mail {
   color: rgb(249, 0, 0);
