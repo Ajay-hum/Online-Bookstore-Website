@@ -227,7 +227,7 @@
   {
     "id": "29",
     "title": "The Midnight Library",
-    "image": "https://example.com/Midnightlibrary.jpg",
+    "image": "midnightlibrary",
     "description": "A novel about the choices that go into a life well lived.",
     "author": "Matt Haig",
     "price": "$11.99"
@@ -235,7 +235,7 @@
   {
     "id": "30",
     "title": "Project Hail Mary",
-    "image": "https://example.com/ProjectHailMary.jpg",
+    "image": "hailmary",
     "description": "A lone astronaut must save Earth from disaster.",
     "author": "Andy Weir",
     "price": "$15.99"
@@ -243,7 +243,7 @@
   {
     "id": "31",
     "title": "The Vanishing Half",
-    "image": "https://example.com/Vanishinghalf.jpg",
+    "image": "vanishinghalf",
     "description": "A multi-generational story about two twin sisters.",
     "author": "Brit Bennett",
     "price": "$13.99"
@@ -251,7 +251,7 @@
   {
     "id": "32",
     "title": "Klara and the Sun",
-    "image": "https://example.com/KlaraandtheSun.jpg",
+    "image": "klaraandsun",
     "description": "A story about an artificial friend and the nature of love.",
     "author": "Kazuo Ishiguro",
     "price": "$12.99"
@@ -259,7 +259,7 @@
   {
     "id": "33",
     "title": "The Invisible Life of Addie LaRue",
-    "image": "https://example.com/addie.jpg",
+    "image": "lifeofaddie",
     "description": "A young woman makes a Faustian bargain to live forever.",
     "author": "V.E. Schwab",
     "price": "$14.99"
@@ -267,7 +267,7 @@
   {
     "id": "34",
     "title": "The Night Circus",
-    "image": "https://example.com/nightcircus.jpg",
+    "image": "nightcircus",
     "description": "A magical competition between two young illusionists in a mysterious circus.",
     "discount": "15% off",
     "price": "$12.74"
@@ -275,7 +275,7 @@
   {
     "id": "35",
     "title": "Circe",
-    "image": "https://example.com/circe.jpg",
+    "image": "circe",
     "description": "A retelling of the story of Circe, the witch from The Odyssey.",
     "discount": "20% off",
     "price": "$11.99"
@@ -283,7 +283,7 @@
   {
     "id": "36",
     "title": "Anxious People",
-    "image": "https://example.com/anxiouspeople.jpg",
+    "image": "anxious",
     "description": "A poignant story about a bank robbery gone wrong and the people involved.",
     "discount": "10% off",
     "price": "$13.49"
@@ -291,7 +291,7 @@
   {
     "id": "37",
     "title": "The Seven Husbands of Evelyn Hugo",
-    "image": "https://example.com/evelynhugo.jpg", 
+    "image": "sevenhusbands", 
     "description": "A reclusive Hollywood icon recounts her glamorous life and seven marriages.",
     "discount": "25% off",
     "price": "$9.99"
@@ -299,7 +299,7 @@
   {
     "id": "38",
     "title": "The Invisible Man",
-    "image": "https://example.com/invisibleman.jpg",
+    "image": "invisibleman",
     "description": "A classic science fiction story about a man who becomes invisible.",
     "discount": "15% off",
     "price": "$8.49"
@@ -307,7 +307,7 @@
   {
     "id": "39",
     "title": "Little Fires Everywhere",
-    "image": "https://example.com/littlefires.jpg",
+    "image": "littlefires",
     "description": "A story about the intertwined lives of a mother and daughter in a suburban town.",
     "discount": "20% off",
     "price": "$10.99"
@@ -315,7 +315,7 @@
   {
     "id": "40",
     "title": "The Song of Achilles",
-    "image": "https://example.com/songofachilles.jpg",
+    "image": "songofachilles",
     "description": "A retelling of the Iliad from the perspective of Patroclus.",
     "discount": "15% off",
     "price": "$11.24"

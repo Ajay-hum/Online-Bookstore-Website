@@ -20,7 +20,7 @@ const trendingBooks = [
     image: img1,
     description: 'A novel about the choices that go into a life well lived.',
     price: '$12.99',
-    bookingUrl: '/booking/1',
+    bookingUrl: '/booking',
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const trendingBooks = [
     image: img2,
     description: 'A lone astronaut must save Earth from disaster.',
     price: '$14.99',
-    bookingUrl: '/booking/2',
+    bookingUrl: '/booking',
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const trendingBooks = [
     image: img3,
     description: 'A multi-generational story about two twin sisters.',
     price: '$11.49',
-    bookingUrl: '/booking/3',
+    bookingUrl: '/booking',
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const trendingBooks = [
     image: img4,
     description: 'A story about an artificial friend and the nature of love.',
     price: '$13.49',
-    bookingUrl: '/booking/4',
+    bookingUrl: '/booking',
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const trendingBooks = [
     image: img5,
     description: 'A young woman makes a Faustian bargain to live forever.',
     price: '$15.99',
-    bookingUrl: '/booking/5',
+    bookingUrl: '/booking',
   },
   // Add more books as needed
 ];
@@ -87,7 +87,7 @@ const Trending = () => {
         </div>
 
         <div data-aos="fade-up" className="trendingContent grid">
-          {displayedBooks.map(({ id, title, image, description, price, bookingUrl }) => (
+          {displayedBooks.map(({ id, title, image, description, price, bookingUrl}) => (
             <div className="bookCard" key={id}>
               <div className="bookImage">
                 <img src={image} alt={title} />
@@ -95,7 +95,7 @@ const Trending = () => {
                   <h3>{title}</h3>
                   <p>{description}</p>
                   <span className="price">{price}</span>
-                  <Link to="#" className='bookButton'>Book</Link>
+                  <Link to={bookingUrl} className='bookButton'>Book</Link>
                 </div>
               </div>
             </div>

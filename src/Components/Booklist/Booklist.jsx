@@ -35,6 +35,18 @@ import sevensevensixImage from '../../Asset/History/1776.jpg'
 import devilincityImage from '../../Asset/History/Devil In the White city.jpg'
 import peoplehistoryImage from '../../Asset/History/A peoples history.jpg'
 import gggImage from '../../Asset/History/Guns, Germs and Steel.jpg'
+import midnightlibraryImage from '../../Asset/Trending/The_Midnight_Library.jpg';
+import hailmaryImage from '../../Asset/Trending/Project_Hail_Mary,_First_Edition_Cover_(2021).jpg';
+import vanishinghalfImage from '../../Asset/Trending/The_Vanishing_Half_(Brit_Bennett).png';
+import klaraandsunImage from '../../Asset/Trending/Klara_and_the_Sun_(Kazuo_Ishiguro).png';
+import lifeofaddieImage from '../../Asset/Trending/InvisibleAddieLaRue.jpg';
+import nightcircusImage from '../../Asset/Deals/TheNightCircus.jpg'
+import circeImage from '../../Asset/Deals/Circe_Offering_the_Cup_to_Odysseus.jpg'
+import anxiousImage from '../../Asset/Deals/Folk_med_ångest.jpg'
+import sevenhusbandsImage from '../../Asset/Deals/The_Seven_Husbands_of_Evelyn_Hugo.jpg'
+import invisiblemanImage from '../../Asset/Deals/Wells_-_The_Invisible_Man_-_Pearson_cover_1897.jpg'
+import littlefiresImage from '../../Asset/Deals/Little_Fires_Everywhere_Title_Card.png'
+import songofachillesImage from '../../Asset/Deals/TheSongofAchilles.png'
 
 const images = {
   gatsby: gatsbyImage,
@@ -63,9 +75,21 @@ const images = {
   unbroken: unbrokenImage,
   sevensevensix: sevensevensixImage,
   devilincity: devilincityImage,
-  devilincity: devilincityImage,
+  //devilincity: devilincityImage,
   peoplehistory: peoplehistoryImage,
-  ggg: gggImage
+  ggg: gggImage,
+  midnightlibrary: midnightlibraryImage,
+  hailmary: hailmaryImage,
+  vanishinghalf: vanishinghalfImage,
+  klaraandsun: klaraandsunImage,
+  lifeofaddie: lifeofaddieImage,
+  nightcircus: nightcircusImage,
+  circe: circeImage,
+  anxious: anxiousImage,
+  sevenhusbands: sevenhusbandsImage,
+  invisibleman: invisiblemanImage,
+  littlefires: littlefiresImage,
+  songofachilles: songofachillesImage
   // Map other images similarly...
 };
 
