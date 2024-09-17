@@ -1,15 +1,8 @@
-import React from 'react';
-import './wishlist.css';
-
-const Wishlist = () => {
-  return (
-    <section id="wishlist">
-        <h2>Your Wishlist</h2>
-        <div className="wishlist-items">
-          {/* Wishlist items will be displayed here */}
-        </div>
-    </section>
-  );
+const addToWishlist = (post) => {
+  const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+  wishlist.push(post);
+  localStorage.setItem('wishlist', JSON.stringify(wishlist));
 };
 
-export default Wishlist;
+// In the other components, I will add a button to save books to the wishlist
+<button onClick={() => addToWishlist(book)}>Add to Wishlist</button>
